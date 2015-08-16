@@ -31,62 +31,63 @@
 
     </head>
 
-    <body data-spy="scroll" data-target="#mainNavigation">
+    <body data-spy="scroll" data-target="#main-nav-collapse">
+
+
+        <!-- site-navigation start -->  
+        <nav id="mainNavigation" class="navbar navbar-dafault navbar-fixed-top" role="navigation">
+            <div class="container">
+                
+                <div class="navbar-header">
+                    
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav-collapse" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    
+                    <!-- navbar logo -->
+                    <div class="navbar-brand">
+                        <span class="sr-only">Cloud Agency</span>
+                        <a href="index.html">
+                            <img src="assets/img/main_logo.png" class="img-responsive center-block" alt="logo">
+                        </a>
+                    </div>
+                    <!-- navbar logo -->
+
+                </div><!-- /.navbar-header -->
+
+                <!-- nav links -->
+                <div class="collapse navbar-collapse" id="main-nav-collapse">
+                    <ul class="nav navbar-nav navbar-right text-uppercase">
+                        <li class="active">
+                            <a href="#header">home</a>
+                        </li>
+                        <li>
+                            <a href="#about">about</a>
+                        </li>
+                        <li>
+                            <a href="#services">services</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio">portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#blog">blog</a>
+                        </li>
+                        <li>
+                            <a href="#contact">contact</a>
+                        </li>
+                    </ul>
+                </div><!-- nav links -->
+                
+            </div><!-- /.container -->
+        </nav>
+        <!-- site-navigation end -->
+
 
         <div id="home-page">
-
-            <!-- site-navigation start -->  
-            <nav id="mainNavigation" class="navbar navbar-dafault navbar-fixed-top" role="navigation">
-                <div class="container">
-                    
-                    <div class="navbar-header">
-                        
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        
-                        <!-- navbar logo -->
-                        <div class="navbar-brand">
-                            <span class="sr-only">Cloud Agency</span>
-                            <a href="index.html">
-                                <img src="assets/img/logo.png" class="img-responsive center-block" alt="logo">
-                            </a>
-                        </div>
-                        <!-- navbar logo -->
-
-                    </div><!-- /.navbar-header -->
-
-                    <!-- nav links -->
-                    <div class="collapse navbar-collapse" id="main-nav-collapse">
-                        <ul class="nav navbar-nav navbar-right text-uppercase">
-                            <li>
-                                <a href="#"><span>home</span></a>
-                            </li>
-                            <li>
-                                <a href="#about"><span>about</span></a>
-                            </li>
-                            <li>
-                                <a href="#services"><span>services</span></a>
-                            </li>
-                            <li>
-                                <a href="#portfolio"><span>portfolio</span></a>
-                            </li>
-                            <li>
-                                <a href="#blog"><span>blog</span></a>
-                            </li>
-                            <li>
-                                <a href="#contact"><span>contact</span></a>
-                            </li>
-                        </ul>
-                    </div><!-- nav links -->
-                    
-                </div><!-- /.container -->
-            </nav>
-            <!-- site-navigation end -->
-
 
 
             <!-- header start -->
@@ -500,7 +501,7 @@
                                     quis nostrud exercitation ...
                                 </p>
 
-                                <a href="single_blog.html" class="btn btn-black-border">Read More <span><i class="ion-ios-arrow-thin-right"></i></span></a>
+                                <a href="single_blog.html" class="btn btn-red-border">Read More <span><i class="ion-ios-arrow-thin-right"></i></span></a>
                             </div> <!-- /.blog-content -->
                         </div>
                         <div class="col-md-4">
@@ -516,7 +517,7 @@
                                     quis nostrud exercitation ...
                                 </p>
 
-                                <a href="single_blog.html" class="btn btn-black-border">Read More <span><i class="ion-ios-arrow-thin-right"></i></span></a>
+                                <a href="single_blog.html" class="btn btn-red-border">Read More <span><i class="ion-ios-arrow-thin-right"></i></span></a>
                             </div> <!-- /.blog-content -->
                         </div>
                         <div class="col-md-4">
@@ -532,7 +533,7 @@
                                     quis nostrud exercitation ...
                                 </p>
 
-                                <a href="single_blog.html" class="btn btn-black-border">Read More <span><i class="ion-ios-arrow-thin-right"></i></span></a>
+                                <a href="single_blog.html" class="btn btn-red-border">Read More <span><i class="ion-ios-arrow-thin-right"></i></span></a>
                             </div>  <!-- /.blog-content -->
                         </div>
                     </div>
@@ -630,6 +631,7 @@
             </footer>
             <!-- end: footer -->
 
+
         </div>
 
 
@@ -641,9 +643,11 @@
         <script type="text/javascript" src="assets/js/script.js"></script>
 
 
-        <script type="text/javascript">
-            $('body').scrollspy({ target: '#navbar-example' })
-        </script>
+        <!-- <script type="text/javascript">
+            $(document).ready(function() {
+                $('body').scrollspy({ target: '#mainNavigation' });
+            });
+        </script> -->
 
 
         <!-- script for testimonial section using owl carousel -->
