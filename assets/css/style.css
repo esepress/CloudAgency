@@ -325,12 +325,12 @@ section {
 
 .header-wrapper {
     background: url(../img/header-bg.jpg) no-repeat center center;
+    background-attachment: fixed;
     background-size: cover;
     display: table;
     height: 100vh;
     width: 100%;
     position: relative;
-    z-index: 1;
     overflow-x: hidden;
 }
 
