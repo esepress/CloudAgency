@@ -345,6 +345,7 @@ section {
 }   
 
 .header-wrapper .header-wrapper-inner {
+	background-color: rgba(255, 255, 255, 0.24);
     display: table-cell;
     text-align: center;
     vertical-align: middle;
@@ -969,6 +970,11 @@ footer p.credit {
 }
 
 @media(max-width: 767px) {
+
+	.section-title h2 span {
+		display: block;
+		margin-top: 12px;
+	}
 	.price-box {
 		height: auto;
 		text-align: center;
@@ -1002,5 +1008,11 @@ footer p.credit {
 
 	.header-wrapper .header-wrapper-inner .welcome-speech h3 {
 		width: 65%;
+	}
+
+	.section-heading-btn {
+		left: 15px;
+		top: 79px;
+		width: 117px;
 	}
 }
