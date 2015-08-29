@@ -323,12 +323,10 @@ section {
 
 /*------------------------------  header -----------------------------------*/
 
-#header {
+.header-wrapper {
     background: url(../img/header-bg.jpg) no-repeat center center;
-    background-attachment: fixed;
     background-size: cover;
     display: table;
-    /*height: calc(100vh - 72px);*/
     height: 100vh;
     width: 100%;
     position: relative;
@@ -336,26 +334,17 @@ section {
     overflow-x: hidden;
 }
 
-.header-wrapper .header-overlay {
-    min-height: 100vh;
-    /*min-width: 100vw;*/
-    position: absolute;
-    top: 0;
-    left: 0;
-}   
-
 .header-wrapper .header-wrapper-inner {
 	background-color: rgba(255, 255, 255, 0.24);
     display: table-cell;
     text-align: center;
-    vertical-align: middle;
-}
+    vertical-align: middle; }
 
-.header-wrapper .header-wrapper-inner .welcome-speech {
+.header-wrapper .header-wrapper-inner .intro {
 	margin-top: 6em;
 }
 
-.header-wrapper .header-wrapper-inner .welcome-speech h1 {
+.header-wrapper .header-wrapper-inner .intro h1 {
 	background-color: #db5252;
 	color: #ffffff;
     margin: 0 auto;
@@ -364,7 +353,7 @@ section {
 	width: 40%;
 }
 
-.header-wrapper .header-wrapper-inner .welcome-speech h3 {
+.header-wrapper .header-wrapper-inner .intro h3 {
 	background-color: #db5252;
 	color: #ffffff;
     letter-spacing: 1px;
@@ -975,6 +964,11 @@ footer p.credit {
 		display: block;
 		margin-top: 12px;
 	}
+
+	#client-speech .item {
+		padding: 0px 45px;
+	}
+
 	.price-box {
 		height: auto;
 		text-align: center;
@@ -992,21 +986,21 @@ footer p.credit {
 }
 
 @media (min-width: 500px) and (max-width: 767px) {
-	.header-wrapper .header-wrapper-inner .welcome-speech h1 {
+	.header-wrapper .header-wrapper-inner .intro h1 {
 		width: 65%;
 	}
 
-	.header-wrapper .header-wrapper-inner .welcome-speech h3 {
+	.header-wrapper .header-wrapper-inner .intro h3 {
 		width: 50%;
 	}
 }
 
 @media (max-width: 500px) {
-	.header-wrapper .header-wrapper-inner .welcome-speech h1 {
+	.header-wrapper .header-wrapper-inner .intro h1 {
 		width: 95%;
 	}
 
-	.header-wrapper .header-wrapper-inner .welcome-speech h3 {
+	.header-wrapper .header-wrapper-inner .intro h3 {
 		width: 65%;
 	}
 
