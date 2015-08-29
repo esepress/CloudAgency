@@ -1010,9 +1010,13 @@ footer p.credit {
 		width: 65%;
 	}
 
+	.section-title h2 span {
+		font-size: 15px;
+	}
+
 	.section-heading-btn {
 		left: 15px;
-		top: 90px;
+		top: 79px;
 		width: 117px;
 	}
 }
