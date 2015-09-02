@@ -323,7 +323,7 @@ section {
 
 /*------------------------------  header -----------------------------------*/
 
-.header-wrapper {
+#home-page .header-wrapper {
     background: url(../img/header-bg.jpg) no-repeat center center;
     background-attachment: fixed;
     background-size: cover;
@@ -334,17 +334,17 @@ section {
     overflow-x: hidden;
 }
 
-.header-wrapper .header-wrapper-inner {
+#home-page .header-wrapper .header-wrapper-inner {
 	background-color: rgba(255, 255, 255, 0.24);
     display: table-cell;
     text-align: center;
     vertical-align: middle; }
 
-.header-wrapper .header-wrapper-inner .intro {
+#home-page .header-wrapper .header-wrapper-inner .intro {
 	margin-top: 6em;
 }
 
-.header-wrapper .header-wrapper-inner .intro h1 {
+#home-page .header-wrapper .header-wrapper-inner .intro h1 {
 	background-color: #db5252;
 	color: #ffffff;
     margin: 0 auto;
@@ -353,7 +353,7 @@ section {
 	width: 40%;
 }
 
-.header-wrapper .header-wrapper-inner .intro h3 {
+#home-page .header-wrapper .header-wrapper-inner .intro h3 {
 	background-color: #db5252;
 	color: #ffffff;
     letter-spacing: 1px;
@@ -565,15 +565,15 @@ section {
 ===========================================================================*/
 
 #singleBlogPage .page-head {
-	background: url(../img/single_blog_header.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	margin-top: 75px;
+    background: url(../img/single_blog_header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 75px;
 }
 
-.page-head .header-wrapper {
-	position: relative;
-	padding: 25px 0px;
+#singleBlogPage .page-head .header-wrapper {
+    position: relative;
+    padding: 25px 0px;
 }
 
 .article-summary {
